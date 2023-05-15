@@ -25,7 +25,7 @@ poder aprender a utilizar las etiquetas de HTML5 y las propiedades de CSS3; asi 
 
 ## ¡Link del Demo!
 dale clik a este enlaze para poder vizualizar este proyecto terminado
-👋[Clon de Google](BytiaChanCen.github.io)
+👋[Clon de Google](https://bytiachancen.github.io/GOOGLE-CLONE/)
 
 
 
