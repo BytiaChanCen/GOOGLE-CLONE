@@ -1,0 +1,219 @@
+body{
+    margin:0;/*margen de la aparencia de la pagina*/
+    padding:8px;/**espacio de relleno de la pagina de los lxl*/
+    font-size:13px; /**tamaño de la letra**/
+    font-family: Arial, Helvetica, sans-serif;/* cambio de la fuente de letra de la pagina*/
+}
+/**********************************
+***********************************/
+/*navegacion*/
+header{
+   
+    width: 100%;/*cuanto va acarbar */
+    height: 60px;/*altura*/
+   
+}
+header nav{
+    
+    display:flex;/* centra como un bloque dentro que se pueda mover que sea flexible*/
+    justify-content: flex-end;
+    /*poner la parte de la en forma horizontal o justificar a la derecha*/
+    
+}
+
+header nav .caja-de-contenido{
+    width: 250px;
+    list-style: none;/*quitar puntos*/
+    display: flex;/*propiedad flex-es reponsibo y flexible*/
+    justify-content: center;
+    align-items: center;/*centrado verticalmente-*/
+    height: auto;
+}
+
+a{
+    text-decoration:none;/*quitar la linea de abajo de las letras*/
+    cursor: pointer;/*cambiar el cursor a un pointer*/
+}
+
+nav .caja-de-contenido a{
+    margin: 8px;/*poder separar nuestros elemntos*/
+    color: rgba(0,0,0,.87);/*color de letras*/
+   
+}
+
+/*entrar en cada sessión de clase en especifico*/
+nav .caja-de-contenido .menu{
+/*icono de menu*/
+
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;/*tamaño de la fotos */
+    height: 20px;
+    background-size: contain;/*configurar el tamaño del icono a lo mas grande posible
+    siempre qu este dentro de la caja de contenido */
+    margin: 9px;
+}
+
+nav .caja-de-contenido img {
+    /*este elemnto hace que la imagen sea circular*/
+   border-radius: 60px;/*60px circulo casi perfecto*/
+   margin-left: 10px;/*separar las imagenes*/
+   height: 32px;/*altura de la imagen*/
+   width: 32px;/*ancho de la imagen*/
+
+  
+}
+/*******************************************************
+**logo*************************************************/
+main/*editar secsion entera*/{
+    margin-top: 150px; /* margen de arriba de espacio a espacio*/ 
+    text-align: center;/*centro la imagen horizontalmente |*/
+}
+
+main .mein-logogoogle/*editar la seccion solo donde esta la imagen es especifico*/{
+    width: 530px;/*margen <- de lado izq.de la imagen*/
+    margin: 0 auto;
+    /*^automaticamente se va al centro de lado horizontal dentro de un contenedor
+    ,0 dice que no hay espacio de este este elemento y los que hay arriba */
+    margin-bottom: 35px;  
+}
+
+main .mein-logogoogle img/*editar la imagen */{
+    height: 120px; /*tamaño de la imagen*/
+}
+
+
+main .main-buscador{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;/*margen de la foto*/
+}
+
+main .main-buscador-contenedor{
+    width: 530px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-buscador input{
+    border: none;/*quitar borde de caja de tex*/
+    /*edicion de la caja de busqueda y texto*/
+    width: 550px;
+    height: 30px;
+    outline: none;
+}
+
+/*efecto sombra del buscador*/
+main .main-buscador-contenedor:hover{
+    /* : hover cuando quieres que un elemento interactue con un espacio
+    especifico con el puntero*/
+    box-shadow: 0px 1px 5px 1px #20212447;
+    border-color: #dfe1e500; 
+}
+
+main .main-buscador .icono-de-busqueda{
+    background-image: url("https://seekicon.com/free-icon-download/search_19.svg");
+    background-repeat: no-repeat;/*no repetir*/
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    padding-left: 6%; /*distancia del icon a box tex*/
+}
+
+main .main-buscador .icono-microfono{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-buscador .icono-camara{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 8%;
+}
+
+main .main-botones button{
+    border: 0;/*quitar borde*/
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0  15px;
+    border: 1px solid #f8f9fa;
+    margin-right: 10px;
+}
+
+main .main-botones div{
+    /*alinear las 2 cajas de boton*/
+    display: inline-block;
+}
+
+/*sombra de los botones */
+main .main-botones button:hover{
+    box-shadow: 0 1px 4px 1px rgb(0,0,0,.1) ;
+    border-color: 1px solid #7b7c7e;
+    color:#202124;
+    cursor: pointer;
+}
+
+main .main-cambio-idioma{
+    display: flex; /* que se pueda mover */
+    align-items:center;/* alinea el texto*/
+    justify-content: center;/*poner en el centro*/
+    color: #4d5156;/*color de letra*/
+    font-size: small;
+    margin-bottom: 24px;
+    
+}
+
+
+/**********************************************************
+**pie de pagina ***********footer*************************/
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;/*divir en 2 columnas*/
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer ul{/*edita todas las lista*/
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
+
+footer .pie-de-pagina1{
+    justify-self: left;
+}
+footer .pie-de-pagina2{
+    justify-self: right;
+
+}
+/* codigo hecho con el curso de tecnolochicas Pro!!
+odificado por chan cen bytia saharon 14/05/2023*/
